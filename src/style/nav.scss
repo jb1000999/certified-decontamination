@@ -34,7 +34,7 @@
         transition: 1s ease-in-out;
 
         &:hover {
-          color: black;
+          color: #1d4f64;
         }
       }
 
@@ -43,8 +43,8 @@
         border-radius: 15px;
       }
       .active-nav-buttons {
-        border-bottom: 1px solid black;
-        color: black;
+        border-bottom: 1px solid #0f3647;
+        color: #0f3647;
       }
     }
   }

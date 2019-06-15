@@ -31,16 +31,6 @@ export default class NavComponent extends Component {
               FAQ
             </NavLink>
           </div>
-          <div className="navlink-container">
-            <NavLink to="/mold" activeClassName="active-nav-buttons">
-              Mold
-            </NavLink>
-          </div>
-          <div className="navlink-container">
-            <NavLink to="/meth" activeClassName="active-nav-buttons">
-              Meth
-            </NavLink>
-          </div>
         </div>
       </div>
     );

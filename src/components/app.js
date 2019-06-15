@@ -8,6 +8,9 @@ import Contact from './pages/contact';
 import Faq from './pages/faq';
 import Mold from './pages/mold';
 import Meth from './pages/meth';
+import TearGas from './pages/tear-gas';
+import Fentanyl from './pages/fentanyl';
+import Ricin from './pages/ricin';
 
 export default class App extends Component {
   render () {
@@ -22,6 +25,9 @@ export default class App extends Component {
           <Route path="/faq" component={Faq} />
           <Route path="/mold" component={Mold} />
           <Route path="/meth" component={Meth} />
+          <Route path="/tear-gas" component={TearGas} />
+          <Route path="/fentanyl" component={Fentanyl} />
+          <Route path="/ricin" component={Ricin} />
 
         </Switch>
 

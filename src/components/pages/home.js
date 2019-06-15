@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
+import React from 'react';
+import HomeBanner from '../home-content/home-banner-component';
+// import HomeServices from '../home-content/home-services-component';
 
-export default class Home extends Component {
-  render () {
-    return (
-      <div>
-        <h1>Your friend in the meth business</h1>
-      </div>
-    );
-  }
+export default function () {
+  return (
+    <div>
+      <HomeBanner />
+    </div>
+  );
 }

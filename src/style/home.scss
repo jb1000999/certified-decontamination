@@ -1,0 +1,64 @@
+.banner-container {
+  .banner {
+    position: relative;
+    width: 100%;
+
+    img {
+      height: 700px;
+      width: 100%;
+    }
+
+    h2 span {
+      position: absolute;
+      top: 200px;
+      left: 50px;
+      width: auto;
+      color: $offwhite;
+      font: bold 2rem;
+      letter-spacing: -1;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      text-align: center;
+    }
+  }
+}
+
+.service-container {
+  background-color: #f0f1f1;
+  .services-banner {
+    display: flex;
+    justify-content: center;
+  }
+  .grid-boxes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+    justify-self: center;
+    .services-grid {
+      border: 5px solid $offwhite;
+      border-radius: 15px;
+      text-align: center;
+      background-color: $cd-blue;
+      display: grid;
+      grid-template-columns: 1fr;
+
+      .learn-more-button {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: $offwhite;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+          background-color: #325d6f;
+          border-radius: 15px;
+        }
+      }
+
+      h3,
+      p {
+        color: $offwhite;
+      }
+    }
+  }
+}
