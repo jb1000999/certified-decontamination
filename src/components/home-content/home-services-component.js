@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 export default class HomeServices extends Component {
+  constructor (props) {
+    super (props);
+  }
+
   render () {
     return (
       <div className="service-container">
@@ -13,7 +18,9 @@ export default class HomeServices extends Component {
             <p>
               Nisi excepteur cupidatat exercitation culpa eiusmod velit est deserunt aliqua elit pariatur.
             </p>
-            <a href="/meth" className="learn-more-button">Learn more</a>
+            <Link to="/meth" className="learn-more-button">
+              Learn more
+            </Link>
           </div>
 
           <div className="services-grid">
@@ -21,7 +28,9 @@ export default class HomeServices extends Component {
             <p>
               Nisi excepteur cupidatat exercitation culpa eiusmod velit est deserunt aliqua elit pariatur.
             </p>
-            <a href="/mold" className="learn-more-button">Learn more</a>
+            <Link to="/mold" className="learn-more-button">
+              Learn more
+            </Link>
           </div>
 
           <div className="services-grid">
@@ -29,7 +38,9 @@ export default class HomeServices extends Component {
             <p>
               Nisi excepteur cupidatat exercitation culpa eiusmod velit est deserunt aliqua elit pariatur.
             </p>
-            <a href="/fentanyl" className="learn-more-button">Learn more</a>
+            <Link to="/fentanyl" className="learn-more-button">
+              Learn more
+            </Link>
           </div>
 
           <div className="services-grid">
@@ -37,7 +48,9 @@ export default class HomeServices extends Component {
             <p>
               Nisi excepteur cupidatat exercitation culpa eiusmod velit est deserunt aliqua elit pariatur.
             </p>
-            <a href="/tear-gas" className="learn-more-button">Learn more</a>
+            <Link to="/tear-gas" className="learn-more-button">
+              Learn more
+            </Link>
           </div>
 
           <div className="services-grid">
@@ -45,7 +58,9 @@ export default class HomeServices extends Component {
             <p>
               Nisi excepteur cupidatat exercitation culpa eiusmod velit est deserunt aliqua elit pariatur.
             </p>
-            <a href="/ricin" className="learn-more-button">Learn more</a>
+            <Link to="/ricin" className="learn-more-button">
+              Learn more
+            </Link>
           </div>
         </div>
       </div>
