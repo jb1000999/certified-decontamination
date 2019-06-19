@@ -30,7 +30,6 @@ export default class App extends Component {
           <Route path="/ricin" component={Ricin} />
 
         </Switch>
-
       </div>
     );
   }

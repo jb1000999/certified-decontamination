@@ -13,8 +13,9 @@
     justify-content: center;
 
     .logo {
-      text-decoration: none;
-      color: $offwhite;
+      img {
+        height: 100px;
+      }
     }
   }
 

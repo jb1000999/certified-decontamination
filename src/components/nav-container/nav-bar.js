@@ -1,12 +1,14 @@
 import React, {useState} from 'react';
 import {NavLink} from 'react-router-dom';
 
+import logo from '../../../static/assets/pictures/logo/cd-logo.png';
+
 export default function NavComponent () {
   return (
     <div className="nav-container">
       <div className="logo-container">
         <NavLink to="/" className="logo">
-          Certified Decontamination
+          <img src={logo} alt="logo" />
         </NavLink>
       </div>
       <nav className="navlinks-container">
