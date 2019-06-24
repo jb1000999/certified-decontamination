@@ -1,0 +1,21 @@
+.contact-component {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .contact-form-container {
+    width: 100%;
+    height: 100%;
+    background-color: #a6c7d5;
+    display: flex;
+    justify-content: center;
+    .form-content {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

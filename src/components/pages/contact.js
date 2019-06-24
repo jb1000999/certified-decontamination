@@ -5,10 +5,12 @@ import ContactContainer from '../containers/contact-container';
 
 export default function Contact () {
   return (
-    <div className="contact-container">
-      <ContactContainer />
+    <div className="contact-component">
+      <div className="contact-container">
+        <ContactContainer />
+      </div>
 
-      <div className="contact form container">
+      <div className="contact-form-container">
         <ContactForm />
 
       </div>

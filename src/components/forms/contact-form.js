@@ -1,85 +1,116 @@
-import React, {useState} from 'react';
+import React, {Component} from 'react';
 import axios from 'axios';
 
-function ContactForm (props) {
-  const [name, setName] = useState ('');
-  const [phone, setPhone] = useState ('');
-  const [email, setEmail] = useState ('');
-  const [message, setMessage] = useState ('');
-  const [sent, setSent] = useState (false);
-
-  const resetForm = () => {
-    setName ('');
-    setPhone ('');
-    setEmail ('');
-    setMessage ('');
+class ContactForm extends Component {
+  state = {
+    name: '',
+    message: '',
+    phone: '',
+    email: '',
+    sent: false,
+    buttonText: 'Send Message',
   };
 
-  const formSubmit = e => {
+  formSubmit = e => {
     e.preventDefault ();
 
+    this.setState ({
+      buttonText: '...sending',
+    });
+
     let data = {
-      name: name,
-      email: email,
-      phone: phone,
-      message: message,
+      name: this.state.name,
+      email: this.state.email,
+      phone: this.state.phone,
+      message: this.state.message,
     };
 
     axios
       .post ('API_URI', data)
       .then (res => {
-        setSent (true, resetForm ());
+        this.setState ({sent: true}, this.resetForm ());
       })
       .catch (() => {
-        console.log ('not sent', Error);
+        console.log ('not sent');
       });
   };
 
-  return (
-    <div className="form-container">
-      fields with '*' are required
-      <form>
-        <div className="form item">
-          <label>Your name: </label>
+  resetForm = () => {
+    this.setState ({
+      name: '',
+      message: '',
+      phone: '',
+      email: '',
+      buttonText: 'Message Sent',
+    });
+  };
+
+  render () {
+    return (
+      <div className="form-content">
+        <form className="contact-form" onSubmit={e => this.formSubmit (e)}>
+          <div className="form-item">
+
+            <label className="message" htmlFor="message-input">
+              Your Message
+            </label>
+            <textarea
+              onChange={e => this.setState ({message: e.target.value})}
+              name="message"
+              className="message-input"
+              type="text"
+              placeholder="Please write your message here"
+              value={this.state.message}
+              required
+            />
+          </div>
+
+          <label className="message-name" htmlFor="message-name">
+            Your Name
+          </label>
           <input
+            onChange={e => this.setState ({name: e.target.value})}
+            name="name"
+            className="message-name"
             type="text"
-            placeholder="Full Name"
-            onChange={e => setName (e.target.value)}
-            required
+            placeholder="Your Name"
+            value={this.state.name}
           />
-        </div>
-        <div className="form-item">
-          <label>Phone: </label>
+
+          <label className="message-phone" htmlFor="message-phone">
+            Your Phone
+          </label>
           <input
-            type="text"
-            placeholder="(123)456-7890"
-            onChange={e => setPhone (e.target.value)}
+            onChange={e => this.setState ({phone: e.target.value})}
+            name="phone"
+            className="message-phone"
+            type="tel"
+            placeholder="1234567890"
             required
+            value={this.state.phone}
           />
-        </div>
-        <div className="form-item">
-          <label>Email: </label>
+
+          <label className="message-email" htmlFor="message-email">
+            Your Email
+          </label>
           <input
+            onChange={e => this.setState ({email: e.target.value})}
+            name="email"
+            className="message-email"
             type="email"
-            placeholder="someone@example.com"
-            onChange={e => setEmail (e.target.value)}
+            placeholder="your@email.com"
             required
+            value={this.state.email}
           />
-        </div>
-        <div className="form-item">
-          <label>Messege</label>
-          <textarea
-            type="text"
-            placeholder="What's going on?"
-            onChange={e => setMessage (e.target.value)}
-            required
-          />
-        </div>
-        <input onClick={formSubmit} type="submit" value="Submit" />
 
-      </form>
-    </div>
-  );
+          <div className="button--container">
+            <button type="submit" className="button button-primary">
+              {this.state.buttonText}
+            </button>
+          </div>
+        </form>
+      </div>
+    );
+  }
 }
-
 export default ContactForm;

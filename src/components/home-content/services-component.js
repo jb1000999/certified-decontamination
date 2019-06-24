@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-
-export default function HomeServices () {
+function HomeServices () {
   return (
     <div className="service-container">
       <div className="services-banner">
-        <h2>Our Services</h2>
+        <h1>Our services</h1>
+
       </div>
       <div className="grid-boxes">
         <div className="services-grid">
@@ -13,9 +13,11 @@ export default function HomeServices () {
           <p>
             Nisi excepteur cupidatat exercitation culpa eiusmod velit est deserunt aliqua elit pariatur.
           </p>
-          <Link to="/meth" className="learn-more-button">
-            Learn more
-          </Link>
+          <div className="learn-more-link">
+            <Link to="/meth" className="link-buttons">
+              Learn more
+            </Link>
+          </div>
         </div>
 
         <div className="services-grid">
@@ -23,9 +25,11 @@ export default function HomeServices () {
           <p>
             Nisi excepteur cupidatat exercitation culpa eiusmod velit est deserunt aliqua elit pariatur.
           </p>
-          <Link to="/mold" className="learn-more-button">
-            Learn more
-          </Link>
+          <div className="learn-more-link">
+            <Link to="/mold" className="link-buttons">
+              Learn more
+            </Link>
+          </div>
         </div>
 
         <div className="services-grid">
@@ -33,9 +37,11 @@ export default function HomeServices () {
           <p>
             Nisi excepteur cupidatat exercitation culpa eiusmod velit est deserunt aliqua elit pariatur.
           </p>
-          <Link to="/fentanyl" className="learn-more-button">
-            Learn more
-          </Link>
+          <div className="learn-more-link">
+            <Link to="/fentanyl" className="link-buttons">
+              Learn more
+            </Link>
+          </div>
         </div>
 
         <div className="services-grid">
@@ -43,9 +49,11 @@ export default function HomeServices () {
           <p>
             Nisi excepteur cupidatat exercitation culpa eiusmod velit est deserunt aliqua elit pariatur.
           </p>
-          <Link to="/tear-gas" className="learn-more-button">
-            Learn more
-          </Link>
+          <div className="learn-more-link">
+            <Link to="/tear-gas" className="link-buttons">
+              Learn more
+            </Link>
+          </div>
         </div>
 
         <div className="services-grid">
@@ -53,11 +61,16 @@ export default function HomeServices () {
           <p>
             Nisi excepteur cupidatat exercitation culpa eiusmod velit est deserunt aliqua elit pariatur.
           </p>
-          <Link to="/ricin" className="learn-more-button">
-            Learn more
-          </Link>
+          <div className="learn-more-link">
+            <Link to="/ricin" className="link-buttons">
+              Learn more
+            </Link>
+          </div>
         </div>
       </div>
+      <div className="learn-more-tabs" />
     </div>
   );
 }
+
+export default HomeServices;

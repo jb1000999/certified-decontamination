@@ -1,0 +1,29 @@
+.footer-container {
+  margin-top: 50px;
+  width: 100%;
+  height: 75%;
+  background-color: $cd-blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .footer-left {
+    padding-left: 50px;
+    .footer-logo {
+      height: 80px;
+      display: flex;
+    }
+  }
+  .footer-center {
+    .copywright-contianer {
+      font-size: 0.8em;
+      color: $offwhite;
+    }
+  }
+  .footer-right {
+    .contact-info {
+      padding-right: 50px;
+      font-size: 1.5em;
+      color: $offwhite;
+    }
+  }
+}

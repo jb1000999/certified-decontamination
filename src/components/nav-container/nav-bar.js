@@ -7,16 +7,11 @@ export default function NavComponent () {
   return (
     <div className="nav-container">
       <div className="logo-container">
-        <NavLink to="/" className="logo">
+        <NavLink exact to="/" className="logo">
           <img src={logo} alt="logo" />
         </NavLink>
       </div>
       <nav className="navlinks-container">
-        <nav className="navlink-container">
-          <NavLink exact to="/" activeClassName="active-nav-buttons">
-            Home
-          </NavLink>
-        </nav>
         <nav className="navlink-container">
           <NavLink to="/about" activeClassName="active-nav-buttons">
             About Us

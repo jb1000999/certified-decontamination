@@ -1,13 +1,13 @@
 .banner-container {
   .banner {
-    position: relative;
     width: 100%;
-
-    img {
-      height: 700px;
-      width: 100%;
-    }
-
+    background-image: url(../../static/assets/pictures/banner-photo/banner-photo.jpg);
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: fixed;
+    background-size: cover;
     h2 span {
       position: absolute;
       top: 200px;
@@ -30,11 +30,12 @@
     justify-content: center;
   }
   .grid-boxes {
-    width: 100%;
+    width: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 50px;
+    grid-gap: 2rem;
     justify-self: center;
+
     .services-grid {
       border: 5px solid $offwhite;
       border-radius: 15px;
@@ -42,17 +43,9 @@
       background-color: $cd-blue;
       display: grid;
       grid-template-columns: 1fr;
-
-      .learn-more-button {
-        font-size: 1.2rem;
-        text-decoration: none;
-        color: $offwhite;
-        transition: 0.5s ease-in-out;
-
-        &:hover {
-          background-color: #325d6f;
-          border-radius: 15px;
-        }
+      transition: 0.5s ease-in-out;
+      &:hover {
+        background-color: darkcyan;
       }
 
       h3,
