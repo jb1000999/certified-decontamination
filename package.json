@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Basic skeleton codebase for React/Redux/Router applications.",
   "scripts": {
+    "now-build": "react-scripts build && mv build dist",
     "preinstall": "npm set audit false",
     "start": "webpack-dev-server --config webpack/dev.config.js --watch",
     "build": "cross-env NODE_ENV=production webpack --config webpack/prod.config.js --progress --display-error-details --color",
