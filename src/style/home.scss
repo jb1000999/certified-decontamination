@@ -47,6 +47,19 @@
       &:hover {
         background-color: darkcyan;
       }
+      .learn-more-link {
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          background-color: #377a97;
+          border-radius: 15px;
+        }
+
+        .link-buttons {
+          text-decoration: none;
+          color: $offwhite;
+        }
+      }
 
       h3,
       p {
