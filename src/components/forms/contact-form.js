@@ -49,21 +49,19 @@ class ContactForm extends Component {
     return (
       <div className="form-content">
         <form className="contact-form" onSubmit={e => this.formSubmit (e)}>
-          <div className="form-item">
 
-            <label className="message" htmlFor="message-input">
-              Your Message
-            </label>
-            <textarea
-              onChange={e => this.setState ({message: e.target.value})}
-              name="message"
-              className="message-input"
-              type="text"
-              placeholder="Please write your message here"
-              value={this.state.message}
-              required
-            />
-          </div>
+          <label className="message" htmlFor="message-input">
+            Your Message
+          </label>
+          <textarea
+            onChange={e => this.setState ({message: e.target.value})}
+            name="message"
+            className="message-input"
+            type="text"
+            placeholder="Please write your message here"
+            value={this.state.message}
+            required
+          />
 
           <label className="message-name" htmlFor="message-name">
             Your Name
