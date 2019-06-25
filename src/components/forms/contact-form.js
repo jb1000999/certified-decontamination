@@ -26,7 +26,7 @@ class ContactForm extends Component {
     };
 
     axios
-      .post ('emailer-for-cd-bjyft496r.now.sh/api/v1', data)
+      .post ('https://emailer-for-cd-git-master.ctrjcb.now.sh/api/v1', data)
       .then (res => {
         this.setState ({sent: true}, this.resetForm ());
       })
