@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 import logo from '../../../static/assets/pictures/logo/cd-logo.png';
 
@@ -20,7 +21,8 @@ export default function Footer () {
       </div>
       <div className="footer-right">
         <div className="contact-info">
-          Contact us at: <br /> 801-809-6932
+          Contact us at: <br /> 801-809-6932, <br />
+          or email us here <br /> on our <Link to="/contact">Contact Page</Link>
         </div>
       </div>
 

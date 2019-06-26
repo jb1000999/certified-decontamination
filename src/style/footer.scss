@@ -24,6 +24,10 @@
       padding-right: 50px;
       font-size: 1.5em;
       color: $offwhite;
+      a {
+        color: $offwhite;
+        text-decoration: none;
+      }
     }
   }
 }

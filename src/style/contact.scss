@@ -1,7 +1,20 @@
 .contact-component {
   width: 100%;
   display: flex;
+  background-color: #a6c7d5;
   justify-content: space-between;
+
+  .call-us-container {
+    color: $cd-blue;
+
+    .phone-number {
+      font-size: 1.2rem;
+    }
+
+    .location {
+      padding: 5rem;
+    }
+  }
   .contact-container {
     width: 100%;
     display: flex;
@@ -10,10 +23,10 @@
   .contact-form-container {
     width: 100%;
     height: 100%;
-    background-color: #a6c7d5;
     display: flex;
     justify-content: center;
     .form-content {
+      color: $cd-blue;
       width: 50%;
       padding: 1.5rem;
       .contact-form {
@@ -32,6 +45,11 @@
           font-size: 1.5rem;
           border: 2px solid $offwhite;
           border-radius: 10px;
+          transition: 0.5s ease-in-out;
+          &:focus {
+            outline: none;
+            border: 2px solid $cd-blue;
+          }
         }
 
         textarea {
@@ -44,6 +62,28 @@
           border-radius: 10px;
           font-size: 1.2rem;
           font-family: 'Work Sans', sans-serif;
+          transition: 0.5s ease-in-out;
+          &:focus {
+            border: 2px solid $cd-blue;
+            outline: none;
+          }
+        }
+      }
+      .button--container {
+        padding-top: 1.5em;
+
+        .button {
+          background-color: $cd-blue;
+          border: none;
+          border-radius: 10px;
+          color: $offwhite;
+          padding: 10px;
+          font-size: 1.1rem;
+          cursor: pointer;
+          transition: 0.5s ease-in-out;
+          &:hover {
+            background-color: #5585a2;
+          }
         }
       }
     }
