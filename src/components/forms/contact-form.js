@@ -26,7 +26,7 @@ class ContactForm extends Component {
     };
 
     axios
-      .post ('https://emailer-for-cd.ctrjcb.now.sh/api/v1', data)
+      .post ('https://mailer-for-cd.herokuapp.com/', data)
       .then (res => {
         this.setState ({sent: true}, this.resetForm ());
       })
