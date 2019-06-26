@@ -16,7 +16,7 @@ import Footer from './containers/footer';
 export default function App () {
   return (
     <div className="container">
-      <div className="nav-container">
+      <div className="nav-component">
         <NavComponent />
       </div>
       <Switch>
