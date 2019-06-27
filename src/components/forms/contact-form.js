@@ -48,8 +48,10 @@ class ContactForm extends Component {
   render () {
     return (
       <div className="form-content">
-        <h1>Email us: </h1>
-        <h2>Let us know what you need.</h2>
+        <div className="email-us-banner">
+          <h1>Email us: </h1>
+          <h2>Let us know what you need.</h2>
+        </div>
         <form className="contact-form" onSubmit={e => this.formSubmit (e)}>
 
           <label className="message" htmlFor="message-input">

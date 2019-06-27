@@ -4,6 +4,7 @@
   }
 
   .nav-container {
+    flex-direction: column !important;
     .navlinks-container {
       flex-direction: column;
       height: 100%;
@@ -14,9 +15,42 @@
       }
     }
   }
+  .banner-container {
+    .banner {
+      background-size: 550px;
+      h2 span {
+        top: 300px !important;
+      }
+    }
+  }
+
   .footer-container {
+    height: 100%;
     .footer-right {
       display: none;
+    }
+  }
+
+  .contact-component {
+    flex-direction: column !important;
+    .call-us-container {
+      flex-direction: column !important;
+      .location {
+        display: none;
+      }
+    }
+    .form-content {
+      width: 75% !important;
+      .email-us-banner {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+
+    .button--container {
+      display: flex;
+      justify-content: center !important;
     }
   }
 }

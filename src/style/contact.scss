@@ -5,6 +5,7 @@
   justify-content: space-between;
 
   .call-us-container {
+    display: flex;
     color: $cd-blue;
 
     .phone-number {
