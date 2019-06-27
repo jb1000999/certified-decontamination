@@ -7,11 +7,13 @@
     justify-content: center;
   }
   .info-container {
-    padding: 3rem 10rem;
+    padding: 3rem 15rem;
+    letter-spacing: 1px;
     .info-question {
       display: flex;
       justify-content: center;
       .info {
+        color: #333435;
         display: flex;
         text-align: center;
       }
