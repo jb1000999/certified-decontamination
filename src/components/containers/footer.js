@@ -17,6 +17,12 @@ export default function Footer () {
           © {new Date ().getFullYear ()} Certified Decontamination
           <br />
           All rights Reserved
+          <br />
+          Reproduction in any manner,
+          <br />
+          in whole or in part,
+          <br />
+          without permission, is prohibited.
         </div>
       </div>
       <div className="footer-right">

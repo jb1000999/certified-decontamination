@@ -23,13 +23,6 @@
   }
 }
 
-.service-areas {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
-}
-
 .service-container {
   background-color: #f0f1f1;
   .services-banner {
@@ -38,6 +31,7 @@
   }
   .grid-boxes {
     width: auto;
+    margin: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 2rem;
@@ -48,6 +42,7 @@
       border-radius: 15px;
       text-align: center;
       background-color: $cd-blue;
+      padding: 12px;
       display: grid;
       grid-template-columns: 1fr;
       transition: 0.5s ease-in-out;
@@ -56,6 +51,7 @@
       }
       .learn-more-link {
         transition: 0.5s ease-in-out;
+        padding: 5px;
         cursor: pointer;
         &:hover {
           background-color: #377a97;

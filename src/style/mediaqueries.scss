@@ -1,0 +1,22 @@
+@media (max-width: 615px) {
+  .grid-boxes {
+    grid-template-columns: 1fr !important;
+  }
+
+  .nav-container {
+    .navlinks-container {
+      flex-direction: column;
+      height: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      .navlink-container {
+        justify-content: center;
+      }
+    }
+  }
+  .footer-container {
+    .footer-right {
+      display: none;
+    }
+  }
+}

@@ -14,6 +14,9 @@
     }
   }
   .footer-center {
+    display: flex;
+    align-self: flex-end;
+    padding-bottom: 15px;
     .copywright-contianer {
       font-size: 0.8em;
       color: $offwhite;
@@ -22,6 +25,7 @@
   .footer-right {
     .contact-info {
       padding-right: 50px;
+      padding-bottom: 50px;
       font-size: 1.5em;
       color: $offwhite;
       a {
