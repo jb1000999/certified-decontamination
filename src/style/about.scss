@@ -1,0 +1,14 @@
+.about-us-container {
+  width: 100%;
+  .about-banner {
+    margin: 10px 0px 10px 0px;
+    color: $cd-blue;
+    display: flex;
+    justify-content: center;
+  }
+  .about-us-content {
+    padding: 0rem 12rem 0rem 12rem;
+    letter-spacing: 1.3px;
+    text-align: center;
+  }
+}
