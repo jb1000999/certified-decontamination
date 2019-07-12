@@ -26,9 +26,20 @@
 .service-container {
   background-color: #f0f1f1;
   .services-banner {
+    padding-top: 1.2rem;
     display: flex;
     justify-content: center;
   }
+
+  .services-description {
+    line-height: 2rem;
+    padding: 2rem 10rem;
+    text-align: center;
+    letter-spacing: 1.2px;
+    display: flex;
+    justify-content: center;
+  }
+
   .grid-boxes {
     width: auto;
     margin: 20px;

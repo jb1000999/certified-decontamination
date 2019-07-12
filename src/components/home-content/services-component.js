@@ -5,8 +5,13 @@ function HomeServices () {
     <div className="service-container">
       <div className="services-banner">
         <h1>Our services</h1>
-
       </div>
+      <div className="services-description">
+        <p>
+          Certified Decontamination provides inspecting and testing services for chemical and microbiological contaminants. In addition to testing for meth and mold, Certified Decontamination interprets meth and mold test results for property owners, home inspectors, attorneys and others. Mike Rowzee, the owner, teaches classes on how to sample for meth and mold. Classes are usually presented in the Spring and Fall.
+        </p>
+      </div>
+
       <div className="grid-boxes">
         <div className="services-grid">
           <h3>Meth and Meth Lab Decontamination</h3>

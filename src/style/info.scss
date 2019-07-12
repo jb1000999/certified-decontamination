@@ -6,17 +6,12 @@
     display: flex;
     justify-content: center;
   }
-  .info-container {
-    padding: 3rem 15rem;
-    letter-spacing: 1px;
-    .info-question {
-      display: flex;
-      justify-content: center;
-      .info {
-        color: #333435;
-        display: flex;
-        text-align: center;
-      }
-    }
+  .info {
+    padding: 1.2rem 10rem;
+    letter-spacing: 1.2px;
+    line-height: 2rem;
+    color: #333435;
+    display: flex;
+    text-align: center;
   }
 }
