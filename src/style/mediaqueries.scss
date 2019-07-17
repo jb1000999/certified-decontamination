@@ -1,6 +1,14 @@
 @media (max-width: 615px) {
+  .services-description {
+    padding: 3rem 5rem !important;
+  }
   .grid-boxes {
     grid-template-columns: 1fr !important;
+    padding: 3rem;
+  }
+
+  .about-us-content {
+    padding: 3rem 5rem !important;
   }
 
   .nav-container {
@@ -10,6 +18,7 @@
       height: 100%;
       margin-top: 10px;
       margin-bottom: 10px;
+
       .navlink-container {
         justify-content: center;
       }
@@ -17,7 +26,7 @@
   }
   .banner-container {
     .banner {
-      background-size: 550px;
+      background-position: center !important;
       h2 span {
         top: 300px !important;
       }
@@ -54,9 +63,9 @@
     }
   }
   .info-page-container {
-    .info-container {
+    .info {
       padding: 3rem 5rem !important;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
   }
 }
