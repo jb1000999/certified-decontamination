@@ -7,11 +7,18 @@
     justify-content: center;
   }
   .info {
-    padding: 1.2rem 10rem;
+    padding: 1.2rem 10rem 0rem 10rem;
     letter-spacing: 1.2px;
     line-height: 2rem;
     color: #333435;
-    display: flex;
     text-align: center;
+  }
+
+  .info-list {
+    padding: 0rem 10rem;
+    line-height: 2rem;
+    padding-left: 11rem;
+    letter-spacing: 1.2px;
+    color: #333435;
   }
 }
