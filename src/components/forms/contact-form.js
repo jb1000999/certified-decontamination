@@ -1,64 +1,63 @@
-import React, {Component} from 'react';
-import axios from 'axios';
+import React, { Component } from "react";
+import axios from "axios";
 
 class ContactForm extends Component {
   state = {
-    name: '',
-    message: '',
-    phone: '',
-    email: '',
+    name: "",
+    message: "",
+    phone: "",
+    email: "",
     sent: false,
-    buttonText: 'Send Message',
+    buttonText: "Send Message"
   };
 
   formSubmit = e => {
-    e.preventDefault ();
+    e.preventDefault();
 
-    this.setState ({
-      buttonText: '...sending',
+    this.setState({
+      buttonText: "...sending"
     });
 
     let data = {
       name: this.state.name,
       email: this.state.email,
       phone: this.state.phone,
-      message: this.state.message,
+      message: this.state.message
     };
 
     axios
-      .post ('https://mailer-cd.herokuapp.com/mailer', data)
-      .then (res => {
-        this.setState ({sent: true}, this.resetForm ());
+      .post("https://mailer-cd.herokuapp.com/mailer", data)
+      .then(res => {
+        this.setState({ sent: true }, this.resetForm());
       })
-      .catch (() => {
-        console.log ('not sent');
+      .catch(() => {
+        console.log("not sent");
       });
   };
 
   resetForm = () => {
-    this.setState ({
-      name: '',
-      message: '',
-      phone: '',
-      email: '',
-      buttonText: 'Message Sent',
+    this.setState({
+      name: "",
+      message: "",
+      phone: "",
+      email: "",
+      buttonText: "Message Sent"
     });
   };
 
-  render () {
+  render() {
     return (
       <div className="form-content">
         <div className="email-us-banner">
           <h1>Email us: </h1>
           <h2>Let us know what you need.</h2>
         </div>
-        <form className="contact-form" onSubmit={e => this.formSubmit (e)}>
-
+        <form className="contact-form" onSubmit={e => this.formSubmit(e)}>
           <label className="message" htmlFor="message-input">
             Your Message
           </label>
           <textarea
-            onChange={e => this.setState ({message: e.target.value})}
+            onChange={e => this.setState({ message: e.target.value })}
             name="message"
             className="message-input"
             type="text"
@@ -71,7 +70,7 @@ class ContactForm extends Component {
             Your Name
           </label>
           <input
-            onChange={e => this.setState ({name: e.target.value})}
+            onChange={e => this.setState({ name: e.target.value })}
             name="name"
             className="message-name"
             type="text"
@@ -83,7 +82,7 @@ class ContactForm extends Component {
             Your Phone
           </label>
           <input
-            onChange={e => this.setState ({phone: e.target.value})}
+            onChange={e => this.setState({ phone: e.target.value })}
             name="phone"
             className="message-phone"
             type="tel"
@@ -96,7 +95,7 @@ class ContactForm extends Component {
             Your Email
           </label>
           <input
-            onChange={e => this.setState ({email: e.target.value})}
+            onChange={e => this.setState({ email: e.target.value })}
             name="email"
             className="message-email"
             type="email"
