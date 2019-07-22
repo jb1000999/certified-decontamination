@@ -44,17 +44,18 @@
   .grid-boxes {
     width: auto;
     margin: 20px;
+    padding: 2rem 7rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     grid-gap: 2rem;
-    justify-self: center;
 
     .services-grid {
       border: 5px solid $offwhite;
       border-radius: 15px;
       text-align: center;
       background-color: $cd-blue;
-      padding: 12px;
+      padding: 1.5rem;
       display: grid;
       grid-template-columns: 1fr;
       transition: 0.5s ease-in-out;
