@@ -4,7 +4,7 @@
   }
   .grid-boxes {
     grid-template-columns: 1fr !important;
-    padding: 3rem;
+    padding: 3rem !important;
   }
 
   .about-us-content {
@@ -14,13 +14,13 @@
   .nav-container {
     flex-direction: column !important;
     .navlinks-container {
-      flex-direction: column;
       height: 100%;
       margin-top: 10px;
       margin-bottom: 10px;
 
       .navlink-container {
         justify-content: center;
+        padding: 30px !important;
       }
     }
   }
