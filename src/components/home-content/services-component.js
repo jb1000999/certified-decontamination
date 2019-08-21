@@ -21,8 +21,8 @@ function HomeServices() {
         <div className="services-grid">
           <h3>Meth and Meth Lab Decontamination</h3>
           <p>
-            Nisi excepteur cupidatat exercitation culpa eiusmod velit est
-            deserunt aliqua elit pariatur.
+            Inspecting, testing and decontaminating for meth labs and meth use
+            in buildings and vehicles.
           </p>
           <div className="learn-more-link">
             <Link to="/meth" className="link-buttons">
@@ -34,8 +34,8 @@ function HomeServices() {
         <div className="services-grid">
           <h3>Mold Remediation</h3>
           <p>
-            Nisi excepteur cupidatat exercitation culpa eiusmod velit est
-            deserunt aliqua elit pariatur.
+            Inspecting, testing and decontaminating. Free interpretation of mold
+            test results.
           </p>
           <div className="learn-more-link">
             <Link to="/mold" className="link-buttons">
@@ -46,10 +46,7 @@ function HomeServices() {
 
         <div className="services-grid">
           <h3>Fentanyl Decontamination</h3>
-          <p>
-            Nisi excepteur cupidatat exercitation culpa eiusmod velit est
-            deserunt aliqua elit pariatur.
-          </p>
+          <p>Not all analogs can be tested. Here is what you need to know.</p>
           <div className="learn-more-link">
             <Link to="/fentanyl" className="link-buttons">
               Learn more
@@ -60,8 +57,8 @@ function HomeServices() {
         <div className="services-grid">
           <h3>Tear Gas Decontamination</h3>
           <p>
-            Nisi excepteur cupidatat exercitation culpa eiusmod velit est
-            deserunt aliqua elit pariatur.
+            Improper cleanups make conditions worse. What to do and what not to
+            do.
           </p>
           <div className="learn-more-link">
             <Link to="/tear-gas" className="link-buttons">
@@ -73,8 +70,8 @@ function HomeServices() {
         <div className="services-grid">
           <h3>Ricin Decontamination</h3>
           <p>
-            Nisi excepteur cupidatat exercitation culpa eiusmod velit est
-            deserunt aliqua elit pariatur.
+            We are one of the few companies in the world that have
+            decontaminated ricin.
           </p>
           <div className="learn-more-link">
             <Link to="/ricin" className="link-buttons">
@@ -85,8 +82,8 @@ function HomeServices() {
         <div className="services-grid">
           <h3>Formaldehyde Decontamination</h3>
           <p>
-            Nisi excepteur cupidatat exercitation culpa eiusmod velit est
-            deserunt aliqua elit pariatur.
+            An irritant and carcinogen. High indoor levels can be caused by
+            improper cleanups for other contaminants.
           </p>
           <div className="learn-more-link">
             <Link to="/formaldehyde" className="link-buttons">
